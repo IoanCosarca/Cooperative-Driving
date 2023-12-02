@@ -29,6 +29,69 @@
     ;(facts AGENT)
 )
 
+(defrule AGENT::initCycle-change-lane
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-change-lane prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname change-lane-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    ;(facts AGENT)
+)
+
+(defrule AGENT::initCycle-give-priority
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-give-priority prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname give-priority-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    ;(facts AGENT)
+)
+
+(defrule AGENT::initCycle-stop-car
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-stop-car prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname stop-car-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    ;(facts AGENT)
+)
+
+(defrule AGENT::initCycle-reduce-speed
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-reduce-speed prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname reduce-speed-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    ;(facts AGENT)
+)
+
+(defrule AGENT::initCycle-accelerate
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-accelerate prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname accelerate-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    ;(facts AGENT)
+)
+
+(defrule AGENT::initCycle-pull-right
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-pull-right prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname pull-right-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    ;(facts AGENT)
+)
+
+(defrule AGENT::initCycle-pull-left
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-pull-left prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname pull-left-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    ;(facts AGENT)
+)
+
 ;;----------------------------------
 ;;
 ;;    Overtaking
