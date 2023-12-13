@@ -16,7 +16,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-right-turn prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment) (bel_pname right-turn-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment) (bel_pname right-turn-maneuver) (bel_pval prohibited))) ;by default, we assume right turn NOT valid
     ;(facts AGENT)
 )
 
@@ -25,7 +25,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-left-turn prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname left-turn-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname left-turn-maneuver) (bel_pval prohibited))) ;by default, we assume left turn NOT valid
     ;(facts AGENT)
 )
 
@@ -34,7 +34,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-change-lane prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname change-lane-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname change-lane-maneuver) (bel_pval prohibited))) ;by default, we assume change lane NOT valid
     ;(facts AGENT)
 )
 
@@ -43,7 +43,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-give-priority prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname give-priority-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname give-priority-maneuver) (bel_pval prohibited))) ;by default, we assume give priority NOT valid
     ;(facts AGENT)
 )
 
@@ -52,7 +52,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-stop-car prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname stop-car-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname stop-car-maneuver) (bel_pval prohibited))) ;by default, we assume stop car NOT valid
     ;(facts AGENT)
 )
 
@@ -61,7 +61,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-reduce-speed prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname reduce-speed-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname reduce-speed-maneuver) (bel_pval prohibited))) ;by default, we assume reduce speed NOT valid
     ;(facts AGENT)
 )
 
@@ -70,7 +70,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-accelerate prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname accelerate-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname accelerate-maneuver) (bel_pval prohibited))) ;by default, we assume accelerate NOT valid
     ;(facts AGENT)
 )
 
@@ -79,7 +79,7 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-pull-right prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname pull-right-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname pull-right-maneuver) (bel_pval prohibited))) ;by default, we assume pull right NOT valid
     ;(facts AGENT)
 )
 
@@ -88,7 +88,16 @@
     (timp (valoare ?)) ;make sure it fires each cycle
 =>
     (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-pull-left prohibited by default " crlf))
-    (assert (ag_bel (bel_type moment)  (bel_pname pull-left-maneuver) (bel_pval prohibited))) ;by default, we assume overtaking NOT valid
+    (assert (ag_bel (bel_type moment)  (bel_pname pull-left-maneuver) (bel_pval prohibited))) ;by default, we assume pull left NOT valid
+    ;(facts AGENT)
+)
+
+(defrule AGENT::initCycle-keep-going
+    (declare (salience 89))
+    (timp (valoare ?)) ;make sure it fires each cycle
+=>
+    (if (eq ?*ag-in-debug* TRUE) then (printout t "    <D>initCycle-keep-going prohibited by default " crlf))
+    (assert (ag_bel (bel_type moment)  (bel_pname keep-going-maneuver) (bel_pval prohibited))) ;by default, we assume keep going NOT valid
     ;(facts AGENT)
 )
 

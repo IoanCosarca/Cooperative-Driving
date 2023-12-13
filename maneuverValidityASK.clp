@@ -9,4 +9,5 @@
     (ASK accelerate-maneuver)
     (ASK pull-right-maneuver)
     (ASK pull-left-maneuver)
+    (ASK keep-going-maneuver)
 )
