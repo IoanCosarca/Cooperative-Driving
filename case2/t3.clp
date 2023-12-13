@@ -5,21 +5,21 @@
 )
 
 (ag_percept
-	(percept_pobj road)
+	(percept_pobj lane1)
 	(percept_pname partof)
 	(percept_pval ev1)
 )
 
 (ag_percept
-	(percept_pobj lane1)
+	(percept_pobj lane2)
 	(percept_pname partof)
-	(percept_pval road)
+	(percept_pval ev1)
 )
 
 (ag_percept
-	(percept_pobj lane2)
+	(percept_pobj accelerationlane)
 	(percept_pname partof)
-	(percept_pval road)
+	(percept_pval ev1)
 )
 
 (ag_percept
@@ -30,6 +30,12 @@
 
 (ag_percept
 	(percept_pobj lane2)
+	(percept_pname direction)
+	(percept_pval ahead)
+)
+
+(ag_percept
+	(percept_pobj accelerationlane)
 	(percept_pname direction)
 	(percept_pval ahead)
 )
@@ -47,6 +53,12 @@
 )
 
 (ag_percept
+	(percept_pobj thirdcar)
+	(percept_pname ias)
+	(percept_pval car)
+)
+
+(ag_percept
 	(percept_pobj yourcar)
 	(percept_pname partof)
 	(percept_pval ev1)
@@ -59,15 +71,27 @@
 )
 
 (ag_percept
-	(percept_pobj yourcar)
-	(percept_pname ison)
-	(percept_pval lane2)
+	(percept_pobj thirdcar)
+	(percept_pname partof)
+	(percept_pval ev1)
 )
 
 (ag_percept
-	(percept_pobj secondcar)
+	(percept_pobj yourcar)
 	(percept_pname ison)
 	(percept_pval lane1)
+)
+
+(ag_percept
+	(percept_pobj secondcar)
+	(percept_pname ison)
+	(percept_pval accelerationlane)
+)
+
+(ag_percept
+	(percept_pobj thirdcar)
+	(percept_pname ison)
+	(percept_pval lane2)
 )
 
 (ag_percept
@@ -77,27 +101,9 @@
 )
 
 (ag_percept
-	(percept_pobj lane2)
-	(percept_pname priority)
-	(percept_pval high)
-)
-
-(ag_percept
-	(percept_pobj lane1)
-	(percept_pname priority)
-	(percept_pval low)
-)
-
-(ag_percept
-	(percept_pobj lane2)
-	(percept_pname continues)
-	(percept_pval yes)
-)
-
-(ag_percept
-	(percept_pobj lane1)
-	(percept_pname continues)
-	(percept_pval no)
+	(percept_pobj thirdcar)
+	(percept_pname proximity)
+	(percept_pval 0)
 )
 
 (ag_percept
@@ -110,4 +116,10 @@
 	(percept_pobj secondcar)
 	(percept_pname intention)
 	(percept_pval left)
+)
+
+(ag_percept
+	(percept_pobj thirdcar)
+	(percept_pname intention)
+	(percept_pval ahead)
 )

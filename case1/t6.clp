@@ -65,19 +65,7 @@
 )
 
 (ag_percept
-	(percept_pobj secondcar)
-	(percept_pname ias)
-	(percept_pval car)
-)
-
-(ag_percept
 	(percept_pobj yourcar)
-	(percept_pname partof)
-	(percept_pval ev1)
-)
-
-(ag_percept
-	(percept_pobj secondcar)
 	(percept_pname partof)
 	(percept_pval ev1)
 )
@@ -89,25 +77,13 @@
 )
 
 (ag_percept
-	(percept_pobj secondcar)
-	(percept_pname ison)
-	(percept_pval road2)
-)
-
-(ag_percept
 	(percept_pobj yourcar)
 	(percept_pname intention)
 	(percept_pval ahead)
 )
 
 (ag_percept
-	(percept_pobj secondcar)
-	(percept_pname intention)
-	(percept_pval right)
-)
-
-(ag_percept
 	(percept_pobj crossing)
 	(percept_pname state)
-	(percept_pval busy)
+	(percept_pval empty)
 )

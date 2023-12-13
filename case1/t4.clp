@@ -5,33 +5,57 @@
 )
 
 (ag_percept
-	(percept_pobj road)
+    (percept_pobj intersection)
+    (percept_pname partof)
+    (percept_pval ev1)
+)
+
+(ag_percept
+	(percept_pobj road1)
 	(percept_pname partof)
-	(percept_pval ev1)
+	(percept_pval intersection)
 )
 
 (ag_percept
-	(percept_pobj lane1)
+	(percept_pobj road2)
 	(percept_pname partof)
-	(percept_pval road)
+	(percept_pval intersection)
 )
 
 (ag_percept
-	(percept_pobj lane2)
-	(percept_pname partof)
-	(percept_pval road)
+    (percept_pobj road1)
+    (percept_pname direction)
+    (percept_pval ahead)
 )
 
 (ag_percept
-	(percept_pobj lane1)
-	(percept_pname direction)
-	(percept_pval ahead)
+    (percept_pobj road2)
+    (percept_pname direction)
+    (percept_pval right)
 )
 
 (ag_percept
-	(percept_pobj lane2)
-	(percept_pname direction)
-	(percept_pval behind)
+    (percept_pobj road1)
+    (percept_pname priority)
+    (percept_pval high)
+)
+
+(ag_percept
+    (percept_pobj road2)
+    (percept_pname priority)
+    (percept_pval low)
+)
+
+(ag_percept
+    (percept_pobj crossing)
+    (percept_pname partof)
+    (percept_pval ev1)
+)
+
+(ag_percept
+    (percept_pobj crossing)
+    (percept_pname direction)
+    (percept_pval ahead)
 )
 
 (ag_percept
@@ -61,13 +85,13 @@
 (ag_percept
 	(percept_pobj yourcar)
 	(percept_pname ison)
-	(percept_pval lane1)
+	(percept_pval road1)
 )
 
 (ag_percept
 	(percept_pobj secondcar)
 	(percept_pname ison)
-	(percept_pval lane1)
+	(percept_pval road2)
 )
 
 (ag_percept
@@ -79,11 +103,11 @@
 (ag_percept
 	(percept_pobj secondcar)
 	(percept_pname intention)
-	(percept_pval left)
+	(percept_pval right)
 )
 
 (ag_percept
-	(percept_pobj lane2)
+	(percept_pobj crossing)
 	(percept_pname state)
 	(percept_pval empty)
 )

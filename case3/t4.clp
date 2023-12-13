@@ -35,6 +35,30 @@
 )
 
 (ag_percept
+    (percept_pobj sem1)
+    (percept_pname isa)
+    (percept_pval semafor)
+)
+
+(ag_percept
+    (percept_pobj sem1)
+    (percept_pname partof)
+    (percept_pval ev1)
+)
+
+(ag_percept
+    (percept_pobj sem1)
+    (percept_pname direction)
+    (percept_pval ahead)
+)
+
+(ag_percept
+    (percept_pobj sem1)
+    (percept_pname color)
+    (percept_pval red)
+)
+
+(ag_percept
 	(percept_pobj yourcar)
 	(percept_pname isa)
 	(percept_pval car)
@@ -59,25 +83,13 @@
 )
 
 (ag_percept
-	(percept_pobj puddle)
-	(percept_pname partof)
-	(percept_pval lane1)
-)
-
-(ag_percept
-	(percept_pobj bystanders)
+	(percept_pobj parking)
 	(percept_pname partof)
 	(percept_pval ev1)
 )
 
 (ag_percept
-	(percept_pobj puddle)
-	(percept_pname near)
-	(percept_pval bystanders)
-)
-
-(ag_percept
-	(percept_pobj puddle)
+	(percept_pobj parking)
 	(percept_pname direction)
-	(percept_pval ahead)
+	(percept_pval right)
 )

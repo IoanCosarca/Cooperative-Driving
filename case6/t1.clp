@@ -37,6 +37,12 @@
 (ag_percept
 	(percept_pobj yourcar)
 	(percept_pname partof)
+	(percept_pval ev1)
+)
+
+(ag_percept
+	(percept_pobj yourcar)
+	(percept_pname ison)
 	(percept_pval lane1)
 )
 
@@ -72,6 +78,6 @@
 
 (ag_percept
 	(percept_pobj yourcar)
-	(percept_pname takenexit)
-	(percept_pval exitleft)
+	(percept_pname intention)
+	(percept_pval exitright)
 )

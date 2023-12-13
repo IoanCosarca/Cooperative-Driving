@@ -11,27 +11,21 @@
 )
 
 (ag_percept
-	(percept_pobj lane1)
-	(percept_pname partof)
-	(percept_pval road)
-)
-
-(ag_percept
-	(percept_pobj lane2)
-	(percept_pname partof)
-	(percept_pval road)
-)
-
-(ag_percept
-	(percept_pobj lane1)
+	(percept_pobj road)
 	(percept_pname direction)
 	(percept_pval ahead)
 )
 
 (ag_percept
+	(percept_pobj lane1)
+	(percept_pname partof)
+	(percept_pval road)
+)
+
+(ag_percept
 	(percept_pobj lane2)
-	(percept_pname direction)
-	(percept_pval behind)
+	(percept_pname partof)
+	(percept_pval road)
 )
 
 (ag_percept
@@ -49,35 +43,41 @@
 (ag_percept
 	(percept_pobj yourcar)
 	(percept_pname ison)
-	(percept_pval lane1)
+	(percept_pval lane2)
 )
 
 (ag_percept
-	(percept_pobj yourcar)
-	(percept_pname intention)
-	(percept_pval ahead)
-)
-
-(ag_percept
-	(percept_pobj puddle)
-	(percept_pname partof)
-	(percept_pval lane1)
-)
-
-(ag_percept
-	(percept_pobj bystanders)
+    (percept_pobj roundabout)
 	(percept_pname partof)
 	(percept_pval ev1)
 )
 
 (ag_percept
-	(percept_pobj puddle)
-	(percept_pname near)
-	(percept_pval bystanders)
+    (percept_pobj exitright)
+	(percept_pname partof)
+	(percept_pval roundabout)
 )
 
 (ag_percept
-	(percept_pobj puddle)
-	(percept_pname direction)
-	(percept_pval ahead)
+    (percept_pobj exitahead)
+	(percept_pname partof)
+	(percept_pval roundabout)
+)
+
+(ag_percept
+    (percept_pobj exitleft)
+	(percept_pname partof)
+	(percept_pval roundabout)
+)
+
+(ag_percept
+    (percept_pobj exitbehind)
+	(percept_pname partof)
+	(percept_pval roundabout)
+)
+
+(ag_percept
+	(percept_pobj yourcar)
+	(percept_pname intention)
+	(percept_pval exitleft)
 )
