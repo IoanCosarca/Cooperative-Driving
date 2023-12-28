@@ -47,6 +47,12 @@
 )
 
 (ag_percept
+	(percept_pobj thirdcar)
+	(percept_pname ias)
+	(percept_pval car)
+)
+
+(ag_percept
 	(percept_pobj yourcar)
 	(percept_pname partof)
 	(percept_pval ev1)
@@ -54,6 +60,12 @@
 
 (ag_percept
 	(percept_pobj secondcar)
+	(percept_pname partof)
+	(percept_pval ev1)
+)
+
+(ag_percept
+	(percept_pobj thirdcar)
 	(percept_pname partof)
 	(percept_pval ev1)
 )
@@ -68,6 +80,12 @@
 	(percept_pobj secondcar)
 	(percept_pname ison)
 	(percept_pval lane1)
+)
+
+(ag_percept
+	(percept_pobj thirdcar)
+	(percept_pname ison)
+	(percept_pval lane2)
 )
 
 (ag_percept
@@ -78,12 +96,12 @@
 
 (ag_percept
 	(percept_pobj secondcar)
-	(percept_pname intention)
-	(percept_pval left)
+	(percept_pname overtaking)
+	(percept_pval thirdcar)
 )
 
 (ag_percept
-	(percept_pobj lane2)
-	(percept_pname state)
-	(percept_pval busy)
+	(percept_pobj secondcar)
+	(percept_pname proximity)
+	(percept_pval 2)
 )
