@@ -5,7 +5,13 @@
 )
 
 (ag_percept
-    (percept_pobj intersection)
+    (percept_pobj inter)
+    (percept_pname isa)
+    (percept_pval intersection)
+)
+
+(ag_percept
+    (percept_pobj inter)
     (percept_pname partof)
     (percept_pval ev1)
 )
@@ -13,13 +19,13 @@
 (ag_percept
 	(percept_pobj road1)
 	(percept_pname partof)
-	(percept_pval intersection)
+	(percept_pval inter)
 )
 
 (ag_percept
 	(percept_pobj road2)
 	(percept_pname partof)
-	(percept_pval intersection)
+	(percept_pval inter)
 )
 
 (ag_percept
