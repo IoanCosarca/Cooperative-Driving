@@ -47,13 +47,19 @@
 )
 
 (ag_percept
-    (percept_pobj crossing)
+    (percept_pobj crossing1)
+    (percept_pname isa)
+    (percept_pval crossing)
+)
+
+(ag_percept
+    (percept_pobj crossing1)
     (percept_pname partof)
     (percept_pval ev1)
 )
 
 (ag_percept
-    (percept_pobj crossing)
+    (percept_pobj crossing1)
     (percept_pname direction)
     (percept_pval ahead)
 )
@@ -83,7 +89,13 @@
 )
 
 (ag_percept
-	(percept_pobj crossing)
+	(percept_pobj crossing1)
 	(percept_pname state)
 	(percept_pval busy)
+)
+
+(ag_percept
+	(percept_pobj crossing1)
+	(percept_pname proximity)
+	(percept_pval 2)
 )

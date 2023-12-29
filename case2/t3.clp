@@ -6,6 +6,24 @@
 
 (ag_percept
 	(percept_pobj lane1)
+	(percept_pname isa)
+	(percept_pval lane)
+)
+
+(ag_percept
+	(percept_pobj lane2)
+	(percept_pname isa)
+	(percept_pval lane)
+)
+
+(ag_percept
+	(percept_pobj accelerationlane)
+	(percept_pname isa)
+	(percept_pval lane)
+)
+
+(ag_percept
+	(percept_pobj lane1)
 	(percept_pname partof)
 	(percept_pval ev1)
 )
