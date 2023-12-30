@@ -42,20 +42,26 @@
 
 (ag_percept
 	(percept_pobj lane1)
-	(percept_pname direction)
-	(percept_pval ahead)
+	(percept_pname number)
+	(percept_pval one)
 )
 
 (ag_percept
 	(percept_pobj lane2)
-	(percept_pname direction)
-	(percept_pval ahead)
+	(percept_pname number)
+	(percept_pval two)
 )
 
 (ag_percept
-	(percept_pobj accelerationlane)
-	(percept_pname direction)
-	(percept_pval ahead)
+	(percept_pobj lane1)
+	(percept_pname state)
+	(percept_pval busy)
+)
+
+(ag_percept
+	(percept_pobj lane2)
+	(percept_pname state)
+	(percept_pval busy)
 )
 
 (ag_percept
@@ -66,13 +72,13 @@
 
 (ag_percept
 	(percept_pobj secondcar)
-	(percept_pname ias)
+	(percept_pname isa)
 	(percept_pval car)
 )
 
 (ag_percept
 	(percept_pobj thirdcar)
-	(percept_pname ias)
+	(percept_pname isa)
 	(percept_pval car)
 )
 

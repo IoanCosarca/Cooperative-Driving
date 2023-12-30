@@ -53,6 +53,12 @@
 )
 
 (ag_percept
+    (percept_pobj road2)
+    (percept_pname state)
+    (percept_pval busy)
+)
+
+(ag_percept
     (percept_pobj crossing1)
     (percept_pname isa)
     (percept_pval crossing)
@@ -78,7 +84,7 @@
 
 (ag_percept
 	(percept_pobj secondcar)
-	(percept_pname ias)
+	(percept_pname isa)
 	(percept_pval car)
 )
 

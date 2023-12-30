@@ -14,7 +14,7 @@
 ;(defglobal ?*ag-tic-in-debug* = TRUE)
 
 
-(defglobal ?*totalNrRules* = 270)
+(defglobal ?*totalNrRules* = 450)
 
 ;
 ;----------Modul: PERCEPT-MANAGER-----------
@@ -31,7 +31,6 @@
 ;(defglobal ?*sim-in-debug* = TRUE)
 (defglobal ?*percepts-in-debug* = FALSE)
 ;(defglobal ?*percepts-in-debug* = TRUE)
-; (defglobal ?*perceptsDir* = "./perceptiiTest05/")
 (defglobal ?*perceptsDir* = "./case1/")
 ; (defglobal ?*perceptsDir* = "./case2/")
 ; (defglobal ?*perceptsDir* = "./case3/")
@@ -56,8 +55,8 @@
     (import PERCEPT-MANAGER deftemplate ag_percept)
 )
 
-(defglobal ?*ag-in-debug* = FALSE)
-;(defglobal ?*ag-in-debug* = TRUE)
+; (defglobal ?*ag-in-debug* = FALSE)
+(defglobal ?*ag-in-debug* = TRUE)
 (defglobal ?*ag-percepts-in-debug* = FALSE)
 ;(defglobal ?*ag-percepts-in-debug* = TRUE)
 

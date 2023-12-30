@@ -41,6 +41,12 @@
 )
 
 (ag_percept
+	(percept_pobj lane1)
+	(percept_pname nocars)
+	(percept_pval two)
+)
+
+(ag_percept
 	(percept_pobj yourcar)
 	(percept_pname isa)
 	(percept_pval car)
@@ -48,13 +54,13 @@
 
 (ag_percept
 	(percept_pobj secondcar)
-	(percept_pname ias)
+	(percept_pname isa)
 	(percept_pval car)
 )
 
 (ag_percept
 	(percept_pobj thirdcar)
-	(percept_pname ias)
+	(percept_pname isa)
 	(percept_pval car)
 )
 
